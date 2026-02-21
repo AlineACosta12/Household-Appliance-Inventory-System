@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Appliance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h2>Add New Appliance</h2>
+        <!-- Form start -->
+        <form action="add_appliance.php" method="POST">
+            <!-- User info -->
+            <fieldset class="border p-2">
+                <legend class="w-auto">User Information</legend>
+                <label for="first_name">First Name:</label><br>
+                <input type="text" name="first_name" id="first_name" required><br><br>
+                
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" name="last_name" id="last_name" required><br><br>
+                
+                <label for="address">Address:</label><br>
+                <input type="text" name="address" id="address" required><br><br>
+                
+                <label for="mobile">Mobile:</label><br>
+                <input type="text" name="mobile" id="mobile" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+                
+                <label for="eircode">Eircode:</label><br>
+                <input type="text" name="eircode" id="eircode" placeholder="e.g., T23 X285" required><br><br>
+            </fieldset>
+            <br>
+             <!-- Appliance info -->
+            <fieldset class="border p-2">
+                <legend class="w-auto">Appliance Information</legend>
+                 <!-- Type -->
+                <label for="appliance_type">Appliance Type:</label><br>
+                <select name="appliance_type" id="appliance_type" required>
+                    <option value="">Select Appliance Type</option>
+                    <option value="Refrigerator">Refrigerator</option>
+                    <option value="Washing Machine">Washing Machine</option>
+                    <option value="Microwave">Microwave</option>
+                    <option value="Dishwasher">Dishwasher</option>
+                </select><br><br>
+                
+                <label for="brand">Brand:</label><br>
+                <input type="text" name="brand" id="brand" required><br><br>
+                
+                <label for="model_number">Model Number:</label><br>
+                <input type="text" name="model_number" id="model_number" placeholder="e.g., AB-123" required><br><br>
+                
+                <label for="serial_number">Serial Number:</label><br>
+                <input type="text" name="serial_number" id="serial_number" placeholder="e.g., SN-456789" required><br><br>
+                
+                <label for="purchase_date">Purchase Date:</label><br>
+                <input type="date" name="purchase_date" id="purchase_date" required><br><br>
+                
+                <label for="warranty_date">Warranty Expiration Date:</label><br>
+                <input type="date" name="warranty_date" id="warranty_date" required><br><br>
+                
+                <label for="costOfAppliance">Cost of Appliance:</label><br>
+                <input type="text" name="costOfAppliance" id="costOfAppliance" placeholder="e.g., 499.99" required><br><br>
+            </fieldset>
+            <!-- Submit button -->
+            <input type="submit" value="Add Appliance" class="btn btn-primary">
+        </form>
+        <br>
+        <!-- Back to home -->
+        <a href="../index.html" class="btn btn-secondary">Return Home</a>
+    </div>
+</body>
+</html>

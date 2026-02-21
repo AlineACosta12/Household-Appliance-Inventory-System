@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Appliance</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h2 class="mb-4">Search Appliance</h2>
+    <!-- Search form - sends GET request to search_appliance.php -->
+    <form action="search_appliance.php" method="GET">
+        <div class="form-group">
+            <!-- Input field to accept serial number, brand, or model number -->
+            <label for="search_term">Search by Serial Number, Brand, or Model Number:</label>
+            <input type="text" class="form-control" id="search_term" name="search_term" required>
+        </div>
+
+        <!-- Submit button for search -->
+        <button type="submit" class="btn btn-primary">Search</button>
+
+        <!-- Link to go back to home page -->
+        <a href="../index.html" class="btn btn-secondary">Home</a>
+    </form>
+
+</body>
+</html>

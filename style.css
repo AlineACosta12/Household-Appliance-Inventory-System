@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    font-family: 'Segoe UI', sans-serif;
+}
+.hero {
+    padding: 60px 30px;
+    text-align: center;
+}
+.hero h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #333;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #555;
+}
+.card-options {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+.card-options:hover {
+    transform: translateY(-5px);
+}
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.list-group-item:hover {
+    background-color: #d1c4e9;
+    color: #000;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+fieldset {
+    border: 2px solid #d1c4e9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #512da8;
+}
+label {
+    font-weight: 500;
+}
+input, select {
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.btn-primary {
+    background-color: #673ab7;
+    border-color: #673ab7;
+    border-radius: 10px;
+}
+.btn-primary:hover {
+    background-color: #5e35b1;
+}
+.btn-secondary {
+    border-radius: 10px;
+}

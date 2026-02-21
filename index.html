@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- heading and welcome text -->
+        <div class="hero">
+            <h1>Household Appliance Inventory System</h1>
+            <p>Welcome! Please choose one of the following actions:</p>
+        </div>
+        <!-- Row to center the options horizontally on the page -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card-options">
+                    <!-- Display the options -->
+                    <div class="list-group">
+                        <!-- Links to respective pages for each action (Add, Search, Update, Delete) -->
+                        <a href="./Add/add_appliance.html" class="list-group-item list-group-item-action">➕ Add Appliance</a>
+                        <a href="./Search/search_appliance.html" class="list-group-item list-group-item-action">🔍 Search Appliance</a>
+                        <a href="./Update/update_appliance.html" class="list-group-item list-group-item-action">✏️ Update Appliance</a>
+                        <a href="./Delete/delete_appliance.php" class="list-group-item list-group-item-action">🗑️ Delete Appliance</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
